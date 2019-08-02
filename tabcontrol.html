@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" href="tabcontrol.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="tabcontrol.js"></script>
+    <title>选项卡</title>
+</head>
+
+<body>
+
+    <div style="width: 800px;height:250px">
+        <div class="tab_box">
+            <div class="tab_title">
+                <div class="tab_title_item tab_title_checked">选项1</div>
+                <div class="tab_title_item">选项2</div>
+                <div class="tab_title_item">选项3</div>
+            </div>
+            <div class="tab_content">
+                <div class="tab_content_page tab_page_checked">内容1</div>
+                <div class="tab_content_page">内容2</div>
+                <div class="tab_content_page">内容3</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let tb = new TabControl({
+            el: '.tab_box',      //选择器
+        })
+    </script>
+</body>
+
+</html>

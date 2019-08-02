@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .tab_box {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 5px #999;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .tab_title {
+        width: 95%;
+        height: 20%;
+        border-bottom: 1px solid #eeeeee;
+        display: flex;
+    }
+
+    .tab_title_item {
+        height: 100%;
+        width: 90px;
+        font-size: 14px;
+        color: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .tab_title_checked {
+        border-bottom: 1px solid #fc930c;
+        color: #fc930c;
+    }
+
+    .tab_content {
+        width: 95%;
+        height: 80%;
+    }
+
+    .tab_content_page {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab_page_checked{
+    }
+</style>
+
+<body>
+    <div style="width: 800px;height:250px">
+        <div class="tab_box">
+            <div class="tab_title">
+                <div class="tab_title_item tab_title_checked">选项1</div>
+                <div class="tab_title_item">选项2</div>
+            </div>
+            <div class="tab_content">
+                <div class="tab_content_page tab_page_checked">内容1</div>
+                <div class="tab_content_page">内容2</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
